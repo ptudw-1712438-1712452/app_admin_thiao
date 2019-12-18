@@ -1,0 +1,19 @@
+{
+  "name": "app_admin_thiao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "app_admin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptudw-1712438-1712452/app_admin_thiao.git"
+  },
+  "author": "ThuongHoai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ptudw-1712438-1712452/app_admin_thiao/issues"
+  },
+  "homepage": "https://github.com/ptudw-1712438-1712452/app_admin_thiao#readme"
+}
