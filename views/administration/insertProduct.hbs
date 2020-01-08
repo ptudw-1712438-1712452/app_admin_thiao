@@ -1,0 +1,185 @@
+
+<section class="main-content">				
+    <div class="row">					
+                 
+            <section class="main-content">				
+				<div class="row">									
+						<h4 class="title"><span class="text"><strong>---------------</strong>Nhập thông tin sản phẩm</span></h4>
+                        <form action="products/insertProduct" method="post">
+						<table class="table table-striped">
+                            <thead>
+								<tr class='bg5'>
+                                    
+                                    <th></th>
+                                    <th></th>									
+									<th></th>
+									<th>Đường dẫn ảnh thứ 1</th>
+                                    <th>Đường dẫn ảnh thứ 2</th>
+                                    <th></th>
+                                    <th></th>
+								</tr>
+							</thead>                      
+							<tbody>
+								<tr>
+                                    
+                                    <th></th>
+                                    <th></th>									
+									<th></th>
+									<th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <input class="form-control" aria-label="With textarea" id="imagePath_1" name="imagePath_1"></input>
+                                        
+                                        </div>
+                                        <p>(*)Nhập theo mẫu:"../themes/images/thiago/file ảnh của bạn"</p>
+                                    </th>
+                                    <th><div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <input class="form-control" aria-label="With textarea" id="imagePath_2" name="imagePath_2"></input>
+                                        </div>
+                                        (*)Lưu file ảnh của bạn theo đường dẫn bên cạnh"public/themes/images/thiago"</th>
+                                    <th></th>
+                                    <th></th>
+								</tr>			  		  
+							</tbody> 
+							<thead>
+								<tr class='bg5'>
+                                    
+                                    <th></th>
+                                    <th></th>									
+									<th></th>
+									<th>Tiêu đề</th>
+                                    <th>Đường dẫn ảnh thứ 3</th>
+                                    <th></th>
+                                    <th></th>
+								</tr>
+							</thead>                      
+							<tbody>
+								<tr>
+                                    
+                                    <th></th>
+                                    <th></th>									
+									<th></th>
+									<th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <input class="form-control" aria-label="With textarea" id="title" name="title"></input>
+                                        </div>
+                                    </th>
+                                    <th><div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <input class="form-control" aria-label="With textarea" id="imagePath_3" name="imagePath_3"></input>
+                                        </div></th>
+                                    <th></th>
+                                    <th></th>
+								</tr>			  		  
+							</tbody> 
+                            <thead>
+								<tr class='bg5'>
+                                    
+                                    <th></th>	
+                                    <th></th>								
+									<th></th>
+									<th>Miêu tả</th>
+                                    <th>Đặc điểm</th>
+                                    <th></th>
+                                    <th></th>
+								</tr>
+							</thead>                      
+							<tbody>
+								<tr>	
+                                    
+                                    <th></th>
+                                    <th></th>								
+									<th></th>
+									<th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <textarea class="form-control" aria-label="With textarea" id="description" name="description"></textarea>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <textarea class="form-control" aria-label="With textarea" id="Characteristics" name="Characteristics"></textarea>
+                                        </div>
+                                    </th>
+                                    <th></th>
+                                    <th></th>
+								</tr>			  		  
+							</tbody>                             
+                             <thead>
+								<tr class='bg5'>
+                                    	
+                                    <th></th>	
+                                    <th></th>							
+									<th></th>
+									<th>Giá</th>
+                                    <th>Khuyến mãi </th>
+                                    <th></th>
+                                    <th></th>
+								</tr>
+							</thead>                      
+							<tbody>
+								<tr>
+                                   
+                                    <th></th>
+                                    <th></th>									
+									<th></th>
+									<th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <textarea class="form-control" aria-label="With textarea" id="price" name="price"></textarea>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"></span>
+                                            </div>
+                                        <textarea class="form-control" aria-label="With textarea" id="promotion" name="promotion"></textarea>
+                                        </div>
+                                    </th>
+                                    <th></th>
+                                    <th></th>
+								</tr>			  		  
+							</tbody>                           
+                            <tbody>
+								<tr>
+                                   	
+                                    <th></th>
+                                    <th></th>								
+									<th></th>
+									<th><a href="products/insertProduct">
+                                	<button type="submit" class="bg7"> Thêm sản phẩm</button>
+								    </a></th></th>
+                                    <th></th>
+                                    <th></th>								
+									<th></th>
+								</tr>			  		  
+							</tbody>                        
+						</table>
+                        </form>
+						<hr>															
+				</div>
+			</section>      
+   
+  					
+        
+    </div>
+</section>
+

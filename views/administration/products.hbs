@@ -1,0 +1,50 @@
+<section class="main-content">				
+    <div class="row">
+       
+{{# each products}}      
+    <div class="row">
+        <div class="span12">
+            <div class="row">
+                <div class="span12">
+                    <div id="myCarousel" class="myCarousel carousel slide">
+                        <div class="carousel-inner">
+                            <div class="active item">
+                                <ul class="thumbnails">
+                                    {{# each this}}
+                                    <li class="span3">
+                                        <div class="product-box">
+                                            <span class="sale_tag"></span>
+                                            <p><a href="products/editProduct/{{this._id}}" class="bg8"><img src="{{this.imagePath_1}}" height="270px" width="270px"  /></a></p>
+                                            <a href="products/editProduct/{{this._id}}" class="title">{{this.title}}</a><br/>
+                                            <a href="products/editProduct/{{this._id}}" class="category">{{this.description}}</a>                                   
+                                            <p href="products/editProduct/{{this._id}}" class="price">${{this.price}}</p>
+                                            <a href="products/editProduct/{{this._id}}" class="btn btn-success pull-right bg3" role="button">Chỉnh sửa</a>
+                                            <a href="products/deleteProduct" class="btn btn-success pull-right bg3" role="button">Xóa</a>                                           
+                                        </div>
+                                    </li>                                   
+                                    {{/each}}                                                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/each}}					
+	
+    </div>
+
+</section> 
+ <div class="pagination">
+    <a href="products/productsBoy?page=1"><b>1</b></a>
+    <a href="products/productsBoy?page=2"><b>2</b></a>
+    <a href="products/productsBoy?page=3"><b>3</b></a>
+    <a href="products/productsBoy?page=4"><b>4</b></a>
+</div>
+        
+ <a href="products/insertProduct">
+    <div  class="col text-center">
+        <button class="btn btn-default bg7">Thêm sản phẩm</button>
+    </div>
+</a>

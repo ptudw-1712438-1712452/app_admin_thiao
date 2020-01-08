@@ -1,0 +1,28 @@
+<section class="main-content">				
+    <div class="row">
+        <div class="span1 col">                                  
+        </div>
+        <div class="span9">					
+            <h4 class="title"><span class="text"><strong>Thông tin </strong> Khách hàng</span></h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr class='bg5'>									
+                        <th>Tên tài khoản</th>	
+                        <th>Mật khẩu</th>							
+                    </tr>
+                </thead>               
+                {{# each user}}
+                <tbody>
+                    <tr>								
+                        <td>{{this.email}}</td>	
+                        <td>{{this.password}}</td>										
+                    </tr>			  		  
+                </tbody>
+                {{/each}}               
+            </table>
+            <hr>					
+        </div>
+        <div class="span2 col">                                  
+        </div>
+    </div>
+</section>

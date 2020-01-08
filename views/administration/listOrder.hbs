@@ -1,0 +1,43 @@
+<div class="block">	
+    <h4 class="title"><span class="text"><strong>Danh sách</strong> Đơn hàng</span></h4>
+    
+<table class="table table-striped">
+    <thead>
+        <tr class='bg5'>									
+            <th>ID đơn hàng</th>
+            <th>ID thanh toán</th>
+            <th>Trạng thái</th>                     
+        </tr>
+    </thead>       
+    {{# each orders}}
+    <tbody>         
+        <tr>               
+            <td><a href="/administration/orderDetail/{{this._id}}">{{this._id}}</a></td>
+            <td>{{ this.paymentId}}</td>
+            <td>{{this.status}}</td>                                       
+        </tr>	
+         		  		  
+    </tbody>   
+    {{/each}}
+       <tbody>         
+        <tr>               
+            <td></td>
+            <td>
+                <div class="pagination">
+                <a href="administration/listOrder?page=1"><b>1</b></a>
+                <a href="administration/listOrder?page=2"><b>2</b></a>
+                <a href="administration/listOrder?page=3"><b>3</b></a>
+                <a href="administration/listOrder?page=4"><b>4</b></a>
+                <a href="administration/listOrder?page=5"><b>5</b></a>
+            </div>
+            </td>
+            <td></td>                                       
+        </tr>	
+         		  		  
+    </tbody> 
+</table>
+</div>
+
+
+
+   

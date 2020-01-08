@@ -1,0 +1,56 @@
+<div class="block">	
+    <h4 class="title"><span class="text"><strong>Chi tiết</strong> Đơn hàng</span></h4>
+    {{# each order}}
+    <form action="administration/orderDetail/{{this._id}}" method="post">
+<table class="table table-striped">
+    <thead>
+        <tr class='bg5'>									
+            <th>ID người dùng</th>
+            <th>Địa chỉ</th>
+            <th>Tên người nhận</th>           
+            <th>Tình trạng</th>
+            <th>Cập nhật tình trạng</th>
+        </tr>
+    </thead>       
+    
+    <tbody>           
+        <tr>               
+            <td>{{this.user}}</td>
+            <td>{{ this.address}}</td>
+            <td>{{this.name}}</td>               
+            <td>{{ this.status}}</td> 
+            <td>{{ this.status}}</td>              
+        </tr>	
+        		  		  
+    </tbody>
+    <tbody>
+            
+        <tr>               
+            <td></td>
+            <td></td>
+            <td><h5>Tổng tiền: ${{ this.cart.totalPrice}}</h5></td>                           
+            <td></td> 
+            <td>                        
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"></span>
+                    </div>
+                    <textarea class="form-control" aria-label="With textarea" id="newStatus" name="newStatus"></textarea>
+                </div>
+                <a href="administration/orderDetail/{{this._id}}">
+                    <button type="submit" class="bg7"> Cập nhật</button>
+				</a>
+            </td>               
+        </tr>	
+                            
+    </tbody>
+    
+          
+</table>
+</form>
+ {{/each}}
+</div>
+
+
+
+   

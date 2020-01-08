@@ -1,0 +1,42 @@
+<section class="main-content">				
+    <div class="row">
+        <div class="span1 col">                                  
+        </div>
+        <div class="span9">					
+            <h4 class="title"><span class="text"><strong>Danh sách </strong> Khách hàng</span></h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr class='bg5'>									
+                        <th>Tên tài khoản</th>								
+                    </tr>
+                </thead>               
+                {{# each Users}}
+                <tbody>
+                    <tr>								
+                        <td><a href="/administration/userDetail/{{this._id}}">{{this.email}}</a></td>									
+                    </tr>			  		  
+                </tbody>
+                {{/each}}               
+            </table>
+            <hr>					
+        </div>
+        <div class="span2 col">                                  
+        </div>
+    </div>
+    <div class="row">
+        <div class="span1 col">                                  
+        </div>
+        <div class="span9">	
+            <div class="pagination">
+                <a href="administration/listUser?page=1"><b>1</b></a>
+                <a href="administration/listUser?page=2"><b>2</b></a>
+                <a href="administration/listUser?page=3"><b>3</b></a>
+                <a href="administration/listUser?page=4"><b>4</b></a>
+                <a href="administration/listUser?page=5"><b>5</b></a>
+            </div>				
+           		
+        </div>
+        <div class="span2 col">                                  
+        </div>
+    </div>
+</section>
